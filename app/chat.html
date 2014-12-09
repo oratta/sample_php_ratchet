@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script>
+  var conn = new WebSocket('ws://localhost:9000');
+  conn.onopen = function(e){
+    console.log("Connection established!");
+  };
+  conn.onmessage = function(e) {
+    console.log(e.data);
+    var mess = document.createElement("div");
+    mess.appendChild(document.createTextNode(e.data));
+    document.getElementById("message_area").appendChild(mess);
+  };
+  function send(){
+    var msg = document.getElementById("text").value;
+    conn.send(msg);
+  }
+  </script>
+</head>
+<body>
+  <input type="text" id="text" />
+  <input type="button" id="button" value="Send" onclick="send();" />
+  <div id="message_area">
+
+  </div>
+</body>
+</html>
