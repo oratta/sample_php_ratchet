@@ -1,3 +1,4 @@
+<pre>
 以下構築手順
 
 oratta-MacBook@oratta:Program $ mkdir websocket_sample
@@ -68,8 +69,9 @@ react/event-loop suggests installing ext-libev (*)
 Writing lock file
 Generating autoload files
 
-oratta-MacBook@oratta:Program $ mkdir app
-oratta-MacBook@oratta:Program $ cd app
-oratta-MacBook@oratta:Program $ vi chat.php
-oratta-MacBook@oratta:Program $ vi chat.html
-oratta-MacBook@oratta:Program $ php chat.php
+oratta-MacBook@oratta:websocket_sample $ mkdir app
+oratta-MacBook@oratta:websocket_sample $ cd app
+oratta-MacBook@oratta:app $ vi chat.php
+oratta-MacBook@oratta:app $ vi chat.html
+oratta-MacBook@oratta:app $ php chat.php
+</pre>
